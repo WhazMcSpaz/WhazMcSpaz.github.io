@@ -1,0 +1,66 @@
+
+body{
+	background-color: #ffffff;
+}
+
+body p, body li{
+	color: #000000;
+}
+ 
+#sidebar {
+	background-color: #ffffff;
+}
+
+
+#accessibleoptions { /* hidden accessibility options panel*/
+	background-color: #efefef;
+}
+
+#accessibleoptions p {
+	color: #000000;
+}
+
+#menu a {
+	color: #000000;
+}
+
+#menu a:hover{
+	background-color: #efefef;
+}
+	
+#currentpage{
+	background-color: #dfdfdf;
+}
+
+a:link {
+	color:#000000;
+}
+
+a:visited {
+	color:#000000;
+}
+
+h1, h2 {
+	color: #000000;
+}
+
+#separator {
+	border-top: 2px solid #cccccc;
+}
+
+.codeexample{
+	background-color: #efefef;
+}
+
+h1 {
+	-webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	animation-name: fadein;
+	animation-duration: 2s;
+}
+
+@keyframes fadein{
+	from {color:#00000000;}
+	to {color:#000000;}
+}
+

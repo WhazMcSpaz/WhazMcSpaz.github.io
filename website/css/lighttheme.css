@@ -1,0 +1,90 @@
+html {
+    color: #ffffff;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+}
+
+::selection {
+    background: #b3d4fc;
+}
+
+ /* =========================================================================================================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+	background-color: #ffffff;
+}
+
+body p, body li{
+	color: #212121;
+}
+ 
+#sidebar {
+	background-color: #dfdfdf;
+}
+
+
+#accessibleoptions { /* hidden accessibility options panel*/
+	background-color: #bbbbbb;
+}
+
+#accessibleoptions p {
+	color: #000000;
+}
+
+#menu a {
+	color: #000000;
+}
+
+#menu a:hover{
+	background-color: #bfbfbf;
+}
+	
+#currentpage{
+	background-color: #ff9642;
+}
+
+a:link {
+	color:#733000;
+}
+
+a:visited {
+	color:#b34b00;
+}
+
+h1, h2 {
+	color: #d04500;
+}
+
+#separator {
+	border-top: 2px solid #cccccc;
+}
+
+.codeexample{
+	background-color: #c1c1c1;
+}
+
+h1 {
+	-webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	animation-name: fadein;
+	animation-duration: 2s;
+}
+@keyframes fadein{
+	from {color:#d0450000;}
+	to {color:#d04500;}
+}
+

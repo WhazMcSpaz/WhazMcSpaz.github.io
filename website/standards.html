@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>History of Website Design and the Aesthetics of the WWW</title>
+  <meta name="description" content="The History of Website Design and the Aesthetics of the World Wide Web.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link id="basesheet" rel="stylesheet" href="css/normalize.css">
+  <link id="mainsheet" rel="stylesheet" href="css/main.css">
+  <link id="theme" rel="stylesheet" href="css/darktheme.css">
+  <link id="fontsize" rel="stylesheet" href="css/100font.css">
+  
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div id="content">
+	<div id="sidebar">
+		<img width="250" height="230" src="img/logo.png" alt="Logo">  <!-- http://www.logospng.com/world-wide-web-icon-public-domain-vectors-76275-png.html -->
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="visuals.html">Visuals</a></li>
+				<li><a id="currentpage" href="standards.html">Standards</a></li>
+				<li><hr><a href="#" id="accessibleoptionslink">Accessibility Options</a>
+					<div id="accessibleoptions" class="hidden">
+						<ul>
+							<li> Font Size <br>
+								<button type="button" id="font100button">100%</button> <!-- Normal size is 16px for most text -->
+								<button type="button" id="font150button">150%</button>
+								<button type="button" id="font200button">200%</button>
+								<hr>
+							</li>
+							<li> Theme <br>
+								<button type="button" id="darkthemebutton">Dark</button> <!-- Default is dark -->
+								<button type="button" id="lightthemebutton">Light</button>
+								<button type="button" id="blackandwhitebutton">Black and White</button>
+								<hr>
+							</li>
+							<li> Disable CSS <br>
+								<button type="button" id="enablecssbutton">Enable CSS</button>
+								<button type="button" id="disablecssbutton">Disable CSS</button>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul> 
+		</div>
+		<p id="devcredit"> Created by Christopher Goddard </p>
+	</div>
+	
+	<h1 id="header">Standards in Website Design</h1>
+	
+	<hr id="separator">
+	<p>When it comes to Website design there are a lot of standards that you are expected to follow. Every language has their own 'good practice' and in general there are some dos and don'ts of websites altogether.</p>
+	<p>The <a href="https://www.w3.org/">World Wide Web Consortium</a> (Often abbreviated to W3C) is an international organization that is in charge of producing technical standards for the web. The community has a very rigorous series of steps that all propositions go through, and it can often take years before the suggestion is eventually accepted and established as a standard. The W3C also works to teach individuals, and is the creator of the <a href="https://www.w3schools.com/">w3schools</a> website which is probably the most used resource by aspiring web developers.</p>
+	<p>Different browsers display HTML elements differently and not all browsers have the same HTML handling capability. It is obvious that we cannot go back to Internet Explorer 1 and use the same HTML as a website from Internet Explorer 11 and expect it to work, but surprisingly we sometimes cannot use a website that functions perfectly well in one modern browser and expect it to work in another. Each web browser updates to include new HTML and CSS features in their own ways, while Google just has frequent updates to the whole browser Internet Explorer would instead release entire new versions of itself with different features included. For people who use older browsers, this can be an issue. If someone is using a browser that is too old (for example, Internet Explorer 8) then it is quite likely that a feature you have does not load for them or is not shown how you want it to be. This can cause a lot of issues depending on the importance of the feature and it is one of many reasons why some websites do not use all of the newest features if they are trying to pander somewhat more towards individuals using outdated software. A useful JavaScript library is Modernizr, which contains many helpful scripts that allow you to check if a feature works on a user's browser and if it doesn't then you can set a backup feature instead.
+	<p>You might have noticed that nearly every website you connect to will start the URL with 'https://' or 'http://'. HTTP stands for the Hyptertext Transfer Protocol and is the set of instructions a computer follows that specify how to transfer and process data through the WWW. HTTPS is a version of HTTP which has increased security by using SSL encryption (thats where the S comes from) and makes the data sent to the website less likely to be stolen or used maliciously. HTTP and HTTPS are the standards for communication over the WWW, with HTTPS now being the more used protocol since 2018.</p>
+	<p>Some websites, like this one, try to adhere to specific guidelines that allow the website to remain 'accessible'. One major design accessibility feature is to do with the use of colour in websites. It is stated that approximately 5&percnt; of people suffer from some form of colour blindness, and people with poor eyesight can struggle to read information when the colours used aren't very distinguishable. W3C's Web Content Accessibility Guidelines suggest that the contrast ratio between the foreground and background colours should be minimum of 4.5:1 for text on a website. This isn't a perfect value, and people with extreme visual impairedness may still struggle at this point, but this is a good minimum to have that ensures nearly all users will be able to read text on the website.</p>
+	<p>When writing HTML you should always do your best to keep both the website and the code 'clean looking', that is to say that it should not be messy to read or navigate. There are some principles of best practice you should try to follow when writing HTML to ensure your code is good:</p>
+	<ul>
+		<li>Pay Attention to what you write and how much effort you put in</li>
+		<li>Indent your code properly to make it easy to read and modify</li>
+		<li>Keep your styling in the CSS file, and keep your scripting in a JS file</li>
+		<li>While divs are useful to keep structure, don't overuse them when they aren't needed. Avoid 'divitis'</li>
+		<li>Use one tag per line</li>
+		<li>Class tags and IDs should have meaningful names</li>
+	</ul>
+	
+	<div id="sources">
+		<p>Read More: <a href="https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html">Source for usage of HTTPS and HTTP</a>, <a href="https://www.w3.org/standards/">W3's web standards</a>, <a href="https://developers.google.com/web/fundamentals/accessibility/accessible-styles#dont_convey_information_with_color_alone">Source on colour blindness and additional accessibility information</a>, <a href="https://webaim.org/standards/wcag/checklist">Web accessibility checklist</a>, <a href="https://www.smashingmagazine.com/2008/11/12-principles-for-keeping-your-code-clean/">Good HTML Principles</a></p>
+	</div>
+	
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

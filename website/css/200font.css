@@ -1,0 +1,38 @@
+html {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+#menu ul li {
+	font-size: 40px;
+}
+
+#devcredit {
+	font-size: 28px;
+	width:330px;
+}
+
+#content {
+	padding-left: 430px;
+}
+
+#sidebar {
+	width: 370px;
+}
+
+#accessibleoptions { /* hidden accessibility options panel*/
+	height:570px;
+	width:540px;
+	top:230px;
+	left:370px;
+	-webkit-animation-name: movein; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: movein;
+	animation-duration: 1s;
+}
+
+
+@keyframes movein{
+	from {left:0px;}
+	to {left:370px;}
+}

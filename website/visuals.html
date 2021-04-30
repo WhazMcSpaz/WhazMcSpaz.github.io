@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>History of Website Design and the Aesthetics of the WWW</title>
+  <meta name="description" content="The History of Website Design and the Aesthetics of the World Wide Web.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link id="basesheet" rel="stylesheet" href="css/normalize.css">
+  <link id="mainsheet" rel="stylesheet" href="css/main.css">
+  <link id="theme" rel="stylesheet" href="css/darktheme.css">
+  <link id="fontsize" rel="stylesheet" href="css/100font.css">
+  
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div id="content">
+	<div id="sidebar">
+		<img width="250" height="230" src="img/logo.png" alt="Logo">  <!-- http://www.logospng.com/world-wide-web-icon-public-domain-vectors-76275-png.html -->
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a id="currentpage" href="visuals.html">Visuals</a></li>
+				<li><a href="standards.html">Standards</a></li>
+				<li><hr><a href="#" id="accessibleoptionslink">Accessibility Options</a>
+					<div id="accessibleoptions" class="hidden">
+						<ul>
+							<li> Font Size <br>
+								<button type="button" id="font100button">100%</button> <!-- Normal size is 16px for most text -->
+								<button type="button" id="font150button">150%</button>
+								<button type="button" id="font200button">200%</button>
+								<hr>
+							</li>
+							<li> Theme <br>
+								<button type="button" id="darkthemebutton">Dark</button> <!-- Default is dark -->
+								<button type="button" id="lightthemebutton">Light</button>
+								<button type="button" id="blackandwhitebutton">Black and White</button>
+								<hr>
+							</li>
+							<li> Disable CSS <br>
+								<button type="button" id="enablecssbutton">Enable CSS</button>
+								<button type="button" id="disablecssbutton">Disable CSS</button>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul> 
+		</div>
+		<p id="devcredit"> Created by Christopher Goddard </p>
+	</div>
+	
+	<h1 id="header">Website Visual Design</h1>
+	
+		<hr id="separator">
+		<p>One of the biggest parts of creating a website is customising the look of it. As mentioned in the History page this was originally very limited and done within the HTML code, but in modern times we have so many features and methods of customisation that an advanced web designer can make a website look like nearly anything they desire.</p>
+		<p>There are 3 ways a web developer can customise the look of their webpage: directly adding style attributes within a tag, putting CSS in a style section within the HTML document or using a reference to an external CSS document in the HTML. The best method to use is the last option there, and it is known as 'Two Degrees of Separation', while the second option is called having 'One Degree of Separation'. In general coding it is accepted to use the design principle of "Separation of concerns" which dictates that code should be split into distinct sections that focus on their own specific issue, and is one of the reasons why HTML and CSS (and JavaScript) should be kept in separate files.</p>
+		<h2>Basic Style Editing</h2>
+		<p>One of the most basic ways of customising your website is the ability to change foreground and background colours. Though not always a feature, this is now typically the most used feature across all websites to add style. Any element can have the "background-color" attribute, but only text elements have the regular "color" attribute. Another colour feature that can be used is the ability to give custom colours to the borders, allowing you to give custom outlines to some elements to highlight them or make them more obvious. A website will typically use colours that are complimentary to each other, and normally uses one light colour and one dark colour as the base theme for the site - this website comes with 3 different themes you can select under the 'Accessibility Options' button. The 'Dark' theme uses multiple dark shades as the primary background with light shade text and occasional bright orange colours that are used to add a little bit more aethstetic without being overpowering. The 'Light' theme is essentially the opposite version of the 'Dark' theme, using white shades as the background and dark shades or orange for text. The 'black and white' theme eliminates nearly all custom colour styles except from the occasional use of grey when using the menu. Colours can be used to highlight key details or features and when doing this you should try to use a colour or shade that hasn't been used very much on the page already, however it is important that the colours you use aren't overbearing and you should try to limit the amount of different colours used to only a few so that the website is easy and simple to read instead of being confusing or a rainbow eyesore.</p>
+		<p>Another basic feature of customisation is the ability to position elements in a different location than where they are naturally placed by the HTML. HTML follows a basic layout formula, and that is to put every element on its own line to the left side. There are 5 positioning types in HTML5: Static is the default option where elements are positioned in the same order as they are in HTML, relative positioning is straightforward moving an element by a certain number of pixels from its current location, absolute positioning is like relative positioning but it moves based upon the location of its first parent element that has a positioning type other than static, fixed positioning moves an element to an area of the screen and stays at that same position regardless of scrolling the webpage, sticky is the newest (and least supported) form of positioning where the element is originally relative until a user tries to scroll it off of the screen at which point it 'sticks' to an edge of the window and acts like a fixed element. Floats are also a form of positioning, but work in a different manner to the previously mentioned type of positioning as floated elements are moved to a specific side of the container and then any element it would've overlapped gets wrapped around the newly moved item.</p>
+		
+		<h2>Code Example</h2>
+		<p>A basic line of text might look something like this in your html:</p>
+		<p class="codeexample">  &lt;p&gt;I am a line of text.&lt;/p&gt; </p>
+		<p>Which renders like so when using the current theme of this website: I am a line of text.</p>
+		<p>You can then go into your css file and add a line like this (Note: You must have CSS enabled to see the following features in action):</p>
+		<p class="codeexample">p { color: #00ff00; }</p>
+		<p>Which would then cause that line of text (and all other lines of text by default) to become green coloured, like so:<span class="greentext"> I am a line of text.</span></p>
+		<p>You might then decide you want that line of text in a different place, so you decide to use relative positioning to move it, by change your CSS file to this instead:</p>
+		<p class="codeexample">p { <br>color: #00ff00; <br> position: relative; <br> left: 100px; <br>}</p>
+		<p>This would then cause that text to move like so:<span class="greentext" id="movedtext">I am a line of text.</span></p>
+
+		<h2>Interactive Design</h2>
+		<p>Of course, design isn't always a static output. You will have been on many websites with animation or elements that have variable style. JavaScript has many features for editing elements on the fly and there are often multiple ways to do so. JavaScript is used in this website when you click on the 'Accessibility Options' button and causes the hidden options to become visible again. I made this work by removing a class from the div that would make it invisible when you clicked the button, thus causing all of the elements to be visible again and allowing you to click on them. JavaScript that alters style will typically make use of variables to keep track of alterations, and it is a good idea to use localStorage to keep track of a user's preferences in design (the same tactic employed by this website to keep themes and font sizes when changing pages).</p>
+		<p>JavaScript can also be used to dynamically add or remove elements from the HTML. Using the createElement function you can generate a new element and then add text to it by appending a child 'node'. <a href="https://jquery.com/">Jquery</a> is a javascript library that can simplify the process of adding/removing/editing elements greatly. It is often a good idea to utilise existing frameworks and libraries when they can make your JavaScript simpler to write, and some frameworks can be very useful in helping you visually customise your website. Another such framework is the previously mentioned Bootstrap which contains a huge amount of design templates and makes it easier to create 'responsive' websites that visually change while you use them, such as images expanding when you hover over them or scrolling backgrounds.</p>
+		<p>CSS animations allow you to have elements that can change style on their own, following a 'keyframed' plan that dictates what the element will look like at specific times, then automatically creates an inbetween animation. The head titles for each page use this method of animation, starting at a colour with 0% opacity then transitioning into 100% opacity over the course of 2 seconds. Much more advanced animations can be done than this, multiple attributes can be changed at once and an animation can have multiple keyframes - not just a start and end.</p>
+		<p>Below is an example of a button that uses JavaScript to create a new button element and duplicate itself. Try clicking on it.</p>
+		<div id="duplicatingbuttons">
+			<button type="button" class="duplicatingbutton">Press me</button>
+		</div>
+		<p>The below button changes the text colour of all the duplicate buttons to be bright green by using JQuery CSS editing, try clicking on it before and after creating some more duplicate buttons.</p>
+		<button type="button" id="greentextbutton">Green Them</button>
+		
+		<div id="sources">
+			<p>Read More: <a href="https://www.w3schools.com/css/default.asp">List of CSS attributes and how they can be changed</a>, <a href="https://css-tricks.com/">Cool CSS tricks</a></p>
+		</div>
+	
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
